@@ -1,0 +1,14 @@
+{
+  "name": "angular2-meteor-boilerplate",
+  "description": "This boilerplate is here to give you a simple starting point for your Angular2-Meteor projects.",
+  "version": "0.0.1",
+  "url": "https://github.com/MichaelSolati/angular2-meteor-boilerplate",
+  "options": {
+    "outdir": "./private/docs",
+    "exclude": ".meteor,.node_modules,typings",
+    "paths": ["."],
+    "extension": ".ts",
+    "theme": "simple",
+    "markdown": "./README.md"
+  }
+}

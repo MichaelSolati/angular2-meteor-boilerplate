@@ -1,6 +1,6 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from "@angular/router";
 
-import { homeRoutes } from '../home/home.routes';
+import { homeOutletRoutes } from "/imports/app/homeOutlet/homeOutlet.routes";
 
 /**
  * Routes for App.
@@ -8,7 +8,7 @@ import { homeRoutes } from '../home/home.routes';
  * @type Routes
  */
 const appRoutes: Routes = [
-  ...homeRoutes
+  ...homeOutletRoutes
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

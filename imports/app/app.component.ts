@@ -1,7 +1,6 @@
-'use strict';
+"use strict";
 
-import { Component } from '@angular/core';
-import template from './app.component.html';
+import { Component } from "@angular/core";
 
 /**
 * Our main App component.
@@ -9,8 +8,8 @@ import template from './app.component.html';
 * @constructor
 */
 @Component({
-  selector: 'app',
-  template: template
+  selector: "app",
+  template: `<router-outlet></router-outlet>`
 })
 export class AppComponent {
   /**

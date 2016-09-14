@@ -13,20 +13,18 @@ npm start
     .
     ├── client                                        # Client files
     │   ├── index.html                                # First loaded view pulling from imports
-    │   └── app.module.ts                             # Imports all required files - Bootstrap Angular2 app
+    │   └── main.ts                                   # Imports all required files - Bootstrap Angular 2 app
     ├── imports                                       # A client/server folder
-    │   └── components                                #
-    │      ├── app                                    #
-    │      │  ├── app.component.html                  # App component HTML
-    │      │  ├── app.component.ts                    # App component
-    │      │  └── app.routes.ts                       # Defines all routes for app
-    │      └── home                                   #
-    │         ├── index                               # App component HTML
-    │         │  ├── index.component.html             # Index page component HTML
-    │         │  ├── index.component.ts               # Index page component
-    │         ├── app.component.html                  # App component HTML
-    │         ├── app.component.ts                    # App component
-    │         └── app.routes.ts                       # Defines all routes for app
+    │   └── app                                       #
+    │      ├── home                                   #
+    │      │  ├── home.component.html                 # Home page component HTML (CLIENT ONLY)
+    │      │  └── home.component.ts                   # Home page component Class (CLIENT ONLY)
+    │      ├── homeOutlet                             #
+    │      │  ├── homeOutlet.component.ts             # Outlet (HTML and Class) for all routed in "/" parent route (CLIENT ONLY)
+    │      │  └── homeOutlet.routes.ts                # Defines all routes for "/" parent route (CLIENT ONLY)
+    │      ├── app.component.ts                       # App component (CLIENT ONLY)
+    │      ├── app.module.ts                          # App module (CLIENT ONLY)
+    │      └── app.routes.ts                          # Defines all routes for app (CLIENT ONLY)
     ├── private                                       # Assets only available to the Server
     │   └── docs                                      # YuiDoc for project
     ├── typings                                       #

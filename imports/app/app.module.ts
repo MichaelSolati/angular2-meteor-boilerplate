@@ -2,13 +2,11 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-import { MeteorModule } from "angular2-meteor";
+import { METEOR_PROVIDERS } from "angular2-meteor";
+import { NG2MetaService } from "ng2meta";
 
 import { AppComponent } from "./app.component";
-import { routing } from "./app.routes";
-
-import { HomeOutlet } from "/imports/app/homeOutlet/homeOutlet.component";
-import { Home } from "/imports/app/home/home.component";
+import { routing, components } from "./app.routes";
 
 /**
  * Declares an NgModule. Declares all dependencies as well as which component to bootstrap.
@@ -18,14 +16,18 @@ import { Home } from "/imports/app/home/home.component";
   imports: [
     BrowserModule,
     FormsModule,
-    MeteorModule,
     routing
   ],
   declarations: [
     AppComponent,
-    HomeOutlet,
-    Home
+    ...components
   ],
-  bootstrap: [AppComponent]
+  providers: [
+    METEOR_PROVIDERS,
+    NG2MetaService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

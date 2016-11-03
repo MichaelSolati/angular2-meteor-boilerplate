@@ -1,7 +1,5 @@
-import "reflect-metadata";
-import "rxjs";
-import "zone.js/dist/zone";
-import "zone.js/dist/long-stack-trace-zone";
+import "angular2-meteor-polyfills";
+
 import { enableProdMode } from "@angular/core";
 import { Meteor } from "meteor/meteor";
 

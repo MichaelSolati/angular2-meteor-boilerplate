@@ -1,18 +1,16 @@
-"use strict";
-
 import { Component } from "@angular/core";
 import template from "./home.component.html";
 
 /**
  * Component for Index page.
- * @class Home
+ * @class HomeComponent
  * @constructor
  */
 @Component({
-  selector: "home",
-  template: template,
+  selector: "app-home",
+  template: template
 })
-export class Home {
+export class HomeComponent {
   /**
   * @method constructor
   */

@@ -19,9 +19,9 @@ npm start
     │      ├── home                                   #
     │      │  ├── home.component.html                 # Home page component HTML (CLIENT ONLY)
     │      │  └── home.component.ts                   # Home page component Class (CLIENT ONLY)
-    │      ├── homeOutlet                             #
-    │      │  ├── homeOutlet.component.ts             # Outlet (HTML and Class) for all routed in "/" parent route (CLIENT ONLY)
-    │      │  └── homeOutlet.routes.ts                # Defines all routes for "/" parent route (CLIENT ONLY)
+    │      ├── home-outlet                            #
+    │      │  ├── home-outlet.component.ts            # Outlet (HTML and Class) for all routed in "/" parent route (CLIENT ONLY)
+    │      │  └── home-outlet.routes.ts               # Defines all routes for "/" parent route (CLIENT ONLY)
     │      ├── app.component.ts                       # App component (CLIENT ONLY)
     │      ├── app.module.ts                          # App module (CLIENT ONLY)
     │      └── app.routes.ts                          # Defines all routes for app (CLIENT ONLY)
